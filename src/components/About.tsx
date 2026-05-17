@@ -22,7 +22,7 @@ const About = () => {
     {
       icon: <Cloud className="w-6 h-6" />,
       title: "Tools & Platforms",
-      skills: ["Salesforce", "Azure", "ETL", "EDA", "Data Modeling"]
+      skills: ["Salesforce", "Azure", "ETL", "EDA", "Data Modeling", "Data Validation"]
     }
   ];
 
@@ -95,7 +95,7 @@ const About = () => {
         <div className="mt-12 text-center">
           <h4 className="text-xl font-semibold mb-4 text-muted-foreground">Core Competencies</h4>
           <div className="flex flex-wrap justify-center gap-3">
-            {["Stakeholder Communication", "Problem-Solving", "Collaboration", "Data Storytelling", "Business Intelligence", "A/B Testing", "Statistical & Trend Analysis"].map((concept, index) => (
+            {["Stakeholder Communication", "Problem-Solving", "Collaboration", "Data Storytelling", "Business Intelligence", "A/B Testing", "Statistical & Trend Analysis", "Dashboarding & KPI Reporting"].map((concept, index) => (
               <Badge key={index} variant="outline" className="text-sm px-4 py-2">
                 {concept}
               </Badge>

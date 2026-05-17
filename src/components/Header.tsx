@@ -47,9 +47,9 @@ const Header = () => {
             <a href="tel:+353899784568" className="text-gray-300 hover:text-blue-400 transition-colors">
               <Phone size={18} />
             </a>
-            <a href="https://linkedin.com/in/aishwarya-rajguru" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
-              <Linkedin size={18} />
-            </a>
+<a href="https://www.linkedin.com/in/aishwaryarajguru/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
+               <Linkedin size={18} />
+             </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -89,7 +89,7 @@ const Header = () => {
                 <a href="tel:+353899784568" className="text-gray-300 hover:text-blue-400 transition-colors">
                   <Phone size={18} />
                 </a>
-                <a href="https://linkedin.com/in/aishwarya-rajguru" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="https://www.linkedin.com/in/aishwaryarajguru/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
                   <Linkedin size={18} />
                 </a>
               </div>

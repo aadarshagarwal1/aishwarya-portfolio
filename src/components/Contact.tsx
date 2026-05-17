@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, ExternalLink } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -15,13 +15,13 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       label: "Phone",
-      value: "+1 (919) 672-2226",
-      href: "tel:+19196722226"
+      value: "+353 899784568",
+      href: "tel:+353899784568"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       label: "Location",
-      value: "United States",
+      value: "Dublin, Ireland",
       href: "#"
     }
   ];
@@ -30,14 +30,8 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/aishwarya-rajguru",
+      href: "https://www.linkedin.com/in/aishwaryarajguru/",
       color: "text-blue-500"
-    },
-    {
-      icon: <Github className="w-5 h-5" />,
-      label: "GitHub",
-      href: "https://github.com/aishwarya-rajguru",
-      color: "text-gray-300"
     }
   ];
 
@@ -49,8 +43,8 @@ const Contact = () => {
             Let's <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Connect</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            I'm currently pursuing my MS at UNC Chapel Hill and actively seeking 
-            opportunities to contribute to innovative projects and teams.
+            Data Analyst based in Dublin, Ireland, passionate about transforming 
+            data into actionable insights and driving business decisions.
           </p>
         </div>
 
@@ -133,9 +127,9 @@ const Contact = () => {
                 <div className="space-y-4">
                   <h4 className="font-semibold text-foreground">Education</h4>
                   <div className="text-sm text-muted-foreground">
-                    <p className="font-medium text-primary">University of North Carolina at Chapel Hill</p>
-                    <p>MS in Computer Science</p>
-                    <p>Aug 2024 – May 2026 | GPA: 4.0</p>
+                    <p className="font-medium text-primary">National College of Ireland</p>
+                    <p>MSc in Data Analytics</p>
+                    <p>2023 – 2024</p>
                   </div>
                 </div>
 
@@ -143,11 +137,11 @@ const Contact = () => {
                   <h4 className="font-semibold text-foreground">Interests</h4>
                   <div className="flex flex-wrap gap-2">
                     {[
-                      "Full-Stack Development",
-                      "Cloud Architecture", 
-                      "Machine Learning",
-                      "System Optimization",
-                      "DevOps"
+                      "Data Analytics",
+                      "Business Intelligence",
+                      "Data Visualization",
+                      "Statistical Analysis",
+                      "Cloud Platforms"
                     ].map((interest, index) => (
                       <Badge key={index} variant="secondary" className="text-xs">
                         {interest}

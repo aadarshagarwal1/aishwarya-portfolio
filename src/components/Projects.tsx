@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { ExternalLink, Github, TrendingUp, Zap, Brain, Target } from "lucide-react";
+import { ExternalLink, TrendingUp, Zap, Brain, Target } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -22,8 +22,7 @@ const Projects = () => {
       ],
       technologies: ["Power BI", "DAX", "Data Analysis", "Business Intelligence", "Stakeholder Communication"],
       category: "Business Intelligence",
-      gradient: "from-purple-500 to-pink-500",
-      githubUrl: "https://www.theforage.com/virtual-internships/prototype/m7W4GD9k8hF3Zjsdq"
+      gradient: "from-purple-500 to-pink-500"
     }
   ];
 
@@ -39,8 +38,8 @@ const Projects = () => {
             Featured <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Innovative solutions combining machine learning, optimization algorithms, 
-            and modern web technologies to solve real-world challenges.
+            Data analytics projects showcasing business intelligence, KPI tracking, 
+            and data-driven decision-making across diverse domains.
           </p>
         </div>
 
@@ -114,15 +113,7 @@ const Projects = () => {
                         </div>
                       </div>
 
-                      {/* Action Buttons */}
-                      <div className="flex gap-3 pt-4 mt-auto">
-                        <Button variant="outline" size="sm" asChild className="w-full">
-                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                            <Github className="w-4 h-4" />
-                            Source Code
-                          </a>
-                        </Button>
-                      </div>
+
                     </CardContent>
                     </Card>
                   </div>

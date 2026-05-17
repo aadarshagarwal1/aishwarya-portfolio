@@ -9,9 +9,9 @@ const Education = () => {
       logo: "NCI"
     },
     {
-      degree: "Bachelor's Degree",
+      degree: "Bachelor of Engineering in Electronics",
       school: "University of Mumbai, Mumbai, India",
-      period: "",
+      period: "2019 – 2022",
       gpa: "",
       coursework: [],
       logo: "UM"
@@ -26,7 +26,7 @@ const Education = () => {
             Education
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            My academic journey in Computer Science and commitment to continuous learning
+            My academic journey in Data Analytics and Electronics Engineering
           </p>
         </div>
 
@@ -46,13 +46,13 @@ const Education = () => {
                 
                 <div className="text-right">
                   <p className="text-gray-300 font-medium">{edu.period}</p>
-                  <p className="text-green-400 font-semibold">GPA: {edu.gpa}</p>
+                  {edu.gpa && <p className="text-green-400 font-semibold">GPA: {edu.gpa}</p>}
                 </div>
               </div>
 
               <div className="border-t border-gray-700 pt-6">
                 <h4 className="text-lg font-semibold text-gray-300 mb-3">
-                  {edu.coursework.length > 1 ? "Relevant Coursework:" : "Achievement:"}
+                  {edu.coursework.length > 0 ? "Relevant Coursework:" : ""}
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {edu.coursework.map((course, courseIndex) => (
